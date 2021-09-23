@@ -49,6 +49,7 @@ const spanish_lang = document.querySelector(".selected-lang"),
     subject_contact = document.querySelector('[name="InputSubject"]'),
     message_contact = document.querySelector('[name="InputMessage"]'),
     contact_button2 = document.querySelector(".contact-button-2"),
+    html = document.querySelector('html'),
     styleElem = document.head.appendChild(document.createElement("style"));
 
     // styleElem.innerHTML = "lang-en:before {border-bottom: none;}";
@@ -59,6 +60,7 @@ const spanish_lang = document.querySelector(".selected-lang"),
 spanish_lang.addEventListener("click", () => {
     lang_text.innerHTML = "Idiomas",
     lang_text.style.marginRight = "13px",
+    html.lang = "es",
     // spanish_lang.style.borderBottom = "2px solid crimson",
     // english_lang.className="lang-en extra-changes",
     flags.style.marginRight = "22px",
@@ -73,6 +75,7 @@ spanish_lang.addEventListener("click", () => {
     title_contact.innerHTML = "Contáctame",
     about_description.innerHTML = "Soy Sergio Rodas, Desarrollador Web de Argentina. Cuento con una gran motivación por aprender y crecer profesionalmente. Soy proactivo y me gusta trabajar en entornos desafiantes que me permitan desarrollarme.",
     download_btn.innerHTML = "Descargar CV",
+    download_btn.href = "SergioRodasCV2021.pdf",
     skill_1.innerHTML = "Autodidacta",
     skill_2.innerHTML = "Desarrollador Web",
     skill_3.innerHTML = "Metodologías Ágiles: SCRUM",
@@ -120,6 +123,7 @@ spanish_lang.addEventListener("click", () => {
 english_lang.addEventListener("click", () => {
     lang_text.innerHTML = "Languages",
     lang_text.style.marginRight = "5px",
+    html.lang = "en-US",
     // spanish_lang.style.borderBottom = "none",
     // english_lang.className="lang-en",
     item_home.innerHTML = "<i class='icon-home'></i>Home",
@@ -133,6 +137,7 @@ english_lang.addEventListener("click", () => {
     title_contact.innerHTML = "Get In Touch",
     about_description.innerHTML = "I am Sergio Rodas, Web Developer from Argentina . I have a lot of motivation to learn and grow professionally. I am proactive and I like to work in challenging environments.",
     download_btn.innerHTML = "Download CV",
+    download_btn.href = "SergioRodasCV2021ENG.pdf",
     skill_1.innerHTML = "A Self Taught Person",
     skill_2.innerHTML = "Web Development",
     skill_3.innerHTML = "Agile Methodology: SCRUM",
